@@ -10,6 +10,6 @@
                                                  (sum-multiples-rec (+ actual 1) limit (+ (count-check actual) acc))
                                                  acc))
 
-(define (sum-multiples actual limit) (sum-multiples-rec actual limit 0))
+(define (sum-multiples lower-limit upper-limit) (sum-multiples-rec actual limit 0))
 
 (sum-multiples 0 1000)
